@@ -16,11 +16,13 @@ $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url');
 	</header> -->
 
 <div class="entry-content">
-	<?php the_content(); ?>
+	<!-- <?php
+	// the_content(); ?> -->
+	<p>Test text</p>
 </div>
 
 <div class="entry-meta">
-	<?php the_title('<h2 class="entry-title">&mdash; ', '</h2>'); ?>
+	<?php the_title('<h2 class="author">&mdash; ', '</h2>'); ?>
 	<?php if($source && $source_url): ?>
 
 	<span class="source">, <a href="<?php echo $source_url; ?>">

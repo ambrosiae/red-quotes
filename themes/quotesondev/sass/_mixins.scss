@@ -4,3 +4,14 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin inline-row{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+@mixin entry-title{
+	font-size: 2rem;
+	color: white;
+}

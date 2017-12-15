@@ -31,3 +31,74 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+*{
+	font-family: 'Exo', sans-serif;
+	color: white;
+}
+
+.header-logo{
+	margin: 2rem 0rem;
+	width: 320px;
+}
+
+.home{
+
+	background: #222;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	padding: 1rem;
+	
+	.entry-content{
+		p, a, a:visited{
+			font-size: 1.3rem;
+			color: white;			
+			text-decoration: none;
+			font-style: normal;
+		}
+	}
+	
+	.entry-meta{
+		@include inline-row;
+		
+		.author{
+			font-weight: 300;
+			font-size: 1.3rem;
+			padding: 0rem 10px;
+		}
+		.source{
+			font-style: italic;
+			font-size: 1.3rem;
+		}
+	}
+	
+	button, .new-quote-button{
+		background: transparent;
+		box-shadow: none;
+		border: #0c0 solid 3px;
+		color: #0c0;
+		font-family: 'Exo', sans-serif;
+		text-shadow: none;
+		font-size: 1rem;
+		padding: 0.8rem 2rem;
+		
+	}
+}
+
+.site-info{
+	line-height: 2rem;
+	padding: 3rem 0rem;
+	word-spacing: 0.5rem;
+	font-size: 1rem;
+	.copyright{
+		@include inline-row;
+		p{
+			padding-right: 10px;
+			word-spacing: 0.2rem;
+		}
+		a{
+			color: #0c0;
+		}
+	}
+}

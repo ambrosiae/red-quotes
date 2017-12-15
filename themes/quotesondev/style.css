@@ -236,11 +236,16 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-weight: 500;
+  font-size: 1.3rem; }
 
 /* Copy */
-p {
-  margin-bottom: 1.5rem; }
+p, a {
+  margin-bottom: 1.5rem;
+  font-family: 'Exo', sans-serif;
+  color: white;
+  text-decoration: none; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -407,9 +412,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #0c0; }
   a:visited {
-    color: purple; }
+    color: #0c0; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -567,12 +572,89 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+* {
+  font-family: 'Exo', sans-serif;
+  color: white; }
+
+.header-logo {
+  margin: 2rem 0rem;
+  width: 320px; }
+
+.home {
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1rem; }
+  .home .entry-content p, .home .entry-content a, .home .entry-content a:visited {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    font-style: normal; }
+  .home .entry-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .home .entry-meta .author {
+      font-weight: 300;
+      font-size: 1.3rem;
+      padding: 0rem 10px; }
+    .home .entry-meta .source {
+      font-style: italic;
+      font-size: 1.3rem; }
+  .home button, .home .new-quote-button {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: #0c0 solid 3px;
+    color: #0c0;
+    font-family: 'Exo', sans-serif;
+    text-shadow: none;
+    font-size: 1rem;
+    padding: 0.8rem 2rem; }
+
+.site-info {
+  line-height: 2rem;
+  padding: 3rem 0rem;
+  word-spacing: 0.5rem;
+  font-size: 1rem; }
+  .site-info .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .site-info .copyright p {
+      padding-right: 10px;
+      word-spacing: 0.2rem; }
+    .site-info .copyright a {
+      color: #0c0; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
-.comment-content .wp-smiley {
+.comment-content .wp-smiley, p, a {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
@@ -587,5 +669,30 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* All Archives Page */
+/* About Page */
+.page-id-8 {
+  background: #222;
+  padding: 1rem; }
+  .page-id-8 h1 {
+    font-size: 2rem;
+    color: white; }
+  .page-id-8 .entry-content p {
+    font-weight: 300; }
+  .page-id-8 .entry-content a {
+    color: #0c0; }
+
+/* Archives Page */
+.page-id-14 {
+  padding: 1rem;
+  background: #222;
+  font-size: 2rem;
+  color: white; }
+
 /* Submit a Quote Page */
+.page-id-4 {
+  padding: 1rem;
+  background: #222;
+  font-size: 2rem;
+  color: white; }
+  .page-id-4 h1 {
+    font-size: 2rem; }

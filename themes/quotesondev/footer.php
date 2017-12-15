@@ -11,7 +11,11 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+
+				<a href="">About</a> | <a href="">Archives</a> | <a href="">Submit a Quote</a>
+					<div class="copyright">
+					<p>Brought to you by</p> <a href="www.redacademy.com">RED Academy</a>
+					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

@@ -2,6 +2,37 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* All Archives Page */
+/* About Page */
+.page-id-8{
+  background: #222;
+  padding: 1rem;
+  h1{
+    @include entry-title;
+  }
+  .entry-content{
+    p{
+      font-weight: 300;
+    }
+    a{
+      color: #0c0;
+    }
+  }
+}
+
+/* Archives Page */
+.page-id-14{
+  padding: 1rem;
+  background: #222;
+  @include entry-title;
+  
+}
 
 /* Submit a Quote Page */
+.page-id-4{
+  padding: 1rem;
+  background: #222;
+  @include entry-title;
+  h1{
+    font-size: 2rem;
+  }
+}

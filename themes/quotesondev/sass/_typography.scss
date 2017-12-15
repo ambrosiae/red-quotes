@@ -17,12 +17,17 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-weight: 500;
+	font-size: 1.3rem;
 }
 
 /* Copy */
 
-p {
+p, a {
 	margin-bottom: $base__space-unit;
+	font-family: 'Exo', sans-serif;	
+	color: white;
+	text-decoration: none;
 }
 
 dfn, cite, em, i {
