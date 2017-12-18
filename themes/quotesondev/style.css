@@ -586,8 +586,14 @@ a {
   width: 320px; }
   @media all and (min-width: 1080px) {
     .header-logo {
-      margin: 4rem 0rem 0rem 0rem;
-      width: 700px; } }
+      margin: 4rem auto;
+      width: 700px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .home, .page-template {
   background: #222;
@@ -643,9 +649,6 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-flow: column wrap;
               flex-flow: column wrap;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -673,7 +676,6 @@ a {
         font-size: 1.8rem; } }
     @media all and (min-width: 1080px) {
       .home .site-main p, .page-template .site-main p {
-        margin-top: 3rem;
         font-size: 2.3rem;
         width: 60vw;
         padding: 2rem; } }
@@ -733,13 +735,17 @@ a {
   font-size: 1rem; }
   @media all and (min-width: 1080px) {
     .site-info {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row wrap;
-              flex-flow: row wrap; } }
+              flex-flow: row wrap;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-right: 8rem; } }
   .site-info .menu li, .site-info .primary-menu li {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -771,21 +777,6 @@ a {
       word-spacing: 0.2rem; }
     .site-info .copyright a {
       color: #0c0; }
-
-@media all and (min-width: 1080px) {
-  .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 50vw;
-    margin: auto; } }
 
 /*--------------------------------------------------------------
 # Media

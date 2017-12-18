@@ -41,8 +41,10 @@
 	margin: 2rem 0rem;
 	width: 320px;
 	@include desktop{
-		margin: 4rem 0rem 0rem 0rem;
+		margin: 4rem auto;
 		width: 700px;
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -89,7 +91,6 @@
 		@include desktop{
 			display: flex;
 			flex-flow: column wrap;
-			justify-content: center;
 			align-items: center;
 			min-height: 50vh;
 		}
@@ -110,7 +111,6 @@
 				font-size: 1.8rem;
 			}
 			@include desktop{
-				margin-top: 3rem;
 				font-size: 2.3rem;
 				width: 60vw;
 				padding: 2rem;
@@ -160,8 +160,10 @@
 	word-spacing: 0.5rem;
 	font-size: 1rem;
 	@include desktop{
-		display: inline-flex;
+		display: flex;
 		flex-flow: row wrap;
+		justify-content: flex-end;
+		margin-right: 8rem;
 	}
 	
 	.menu, .primary-menu{
@@ -185,14 +187,5 @@
 		a{
 			color: #0c0;
 		}
-	}
-}
-.content{
-	@include desktop{
-		display: flex;
-		flex-flow: column wrap;
-		align-items: center;
-		max-width: 50vw;
-		margin: auto;
 	}
 }
