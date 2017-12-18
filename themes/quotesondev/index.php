@@ -31,8 +31,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-
-			<div class="entry-meta">
+	<div class="entry-meta">
 	<?php the_title('<h2 class="author">&mdash; ', '</h2>'); ?>
 	<?php if($source && $source_url): ?>
 

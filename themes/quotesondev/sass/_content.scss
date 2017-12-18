@@ -93,6 +93,13 @@
 			align-items: center;
 			min-height: 50vh;
 		}
+
+		.post, .hentry{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 		p{
 			justify-content: center;
 			font-size: 1.2rem;
@@ -149,17 +156,24 @@
 }
 
 .site-info{
-	line-height: 2rem;
-	padding: 3rem 0rem;
+	margin: 3rem 0rem;
 	word-spacing: 0.5rem;
 	font-size: 1rem;
-	
-	.menu, .primary-menu{
+	@include desktop{
 		display: inline-flex;
 		flex-flow: row wrap;
-		justify-content: flex-start;
+	}
+	
+	.menu, .primary-menu{
 		li{
+			display: inline-flex;
+			flex-flow: row wrap;
+			justify-content: flex-start;
+			border-right: white solid 1px;
 			padding-right: 15px;
+		}
+		li:nth-child(3){
+			border-right: none;
 		}
 	}
 	.copyright{
