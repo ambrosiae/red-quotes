@@ -586,7 +586,7 @@ a {
   width: 320px; }
   @media all and (min-width: 1080px) {
     .header-logo {
-      margin: 5rem 0rem 0rem 0rem;
+      margin: 4rem 0rem 0rem 0rem;
       width: 700px; } }
 
 .home, .page-template {
@@ -617,7 +617,7 @@ a {
                 justify-content: flex-start;
         position: absolute;
         margin: auto;
-        bottom: 38rem;
+        top: 20rem;
         left: 8vw;
         color: #0c0;
         font-size: 8rem; } }
@@ -630,7 +630,7 @@ a {
         display: flex;
         position: absolute;
         margin: auto;
-        bottom: 38rem;
+        top: 20rem;
         right: 8vw;
         color: #0c0;
         font-size: 8rem; } }
@@ -649,7 +649,7 @@ a {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      height: 50vh; } }
+      min-height: 50vh; } }
   .home .site-main p, .page-template .site-main p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

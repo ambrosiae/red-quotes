@@ -41,7 +41,7 @@
 	margin: 2rem 0rem;
 	width: 320px;
 	@include desktop{
-		margin: 5rem 0rem 0rem 0rem;
+		margin: 4rem 0rem 0rem 0rem;
 		width: 700px;
 	}
 }
@@ -65,7 +65,7 @@
 			justify-content: flex-start;
 			position: absolute;
 			margin: auto;
-			bottom: 38rem;
+			top: 20rem;
 			left: 8vw;
 			color: #0c0;
 			font-size: 8rem;
@@ -78,7 +78,7 @@
 			display: flex;
 			position: absolute;
 			margin: auto;
-			bottom: 38rem;
+			top: 20rem;
 			right: 8vw;
 			color: #0c0;
 			font-size: 8rem;
@@ -91,7 +91,7 @@
 			flex-flow: column wrap;
 			justify-content: center;
 			align-items: center;
-			height: 50vh;
+			min-height: 50vh;
 		}
 		p{
 			justify-content: center;
