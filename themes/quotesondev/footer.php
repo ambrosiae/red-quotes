@@ -16,13 +16,14 @@
 			<div class="primary-menu">	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?> </div>
 
 					<div class="copyright">
-					<p>Brought to you by</p> <a href="www.redacademy.com">RED Academy</a>
+					<p>Brought to you by</p> <a href="http://redacademy.com">RED Academy</a>
 					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
-
+</section>
+<?php get_template_part (margins); ?>
 	</body>
 </html>
