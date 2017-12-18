@@ -22,9 +22,6 @@ $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url');
 
 </div>
 
-<div class="entry-meta">
-	<?php the_title('<h2 class="entry-title">&mdash;', '</h2>');?>
-
 	<?php if ($source && $source_url):?>
 	<span class="source">, &nbsp;<a href="<?php echo $source_url; ?>"><?php echo $source; ?></a></span>
 

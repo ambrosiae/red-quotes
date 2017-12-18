@@ -2,6 +2,11 @@
 # Page Templates
 --------------------------------------------------------------*/
 .page-template{
+  @include desktop{
+    @include desktop-center;
+  }
+  background: #222;
+  padding: 1rem;
   .fa-quote-left{
     display: none;
     @include desktop{
@@ -15,7 +20,6 @@
       font-size: 8rem;
     }
   }
-  
   .fa-quote-right{
     display: none;
     @include desktop{
@@ -32,12 +36,6 @@
 
 /* About Page */
 .page-template-page-about{
-  @include desktop{
-    @include desktop-center;
-  }
-
-  background: #222;
-  padding: 1rem;
   .post-107{
     display: flex;
     flex-flow: column wrap;
@@ -59,14 +57,6 @@
 
 /* Archives Page */
 .page-template-page-archives{
-  padding: 1rem;
-  background: #222;
-  
-  @include desktop{
-    @include desktop-center;
-  }
-  
-  
   @include entry-title;
   .archives-container{
     margin: 0rem 0.6rem;
@@ -118,19 +108,11 @@
       font-size: 20px;
     }
   }
-  
-  
 }
 
 /* Submit Page */
 .page-template-page-submit{
-  @include desktop{
-    @include desktop-center;
-  }
-  padding: 1rem;
-  background: #222;
-
-  .submit-div{
+ .submit-div{
     @include inline-row;
   }
 
@@ -148,15 +130,10 @@
 
 /* Single Page */
 .single{
-  padding: 1rem;
-  background: #222;
 }
 
 /* Error 404 Page */
 .error404{
-  padding: 1rem;
-  background: #222;
-  
   .page-title{
     font-size: 3rem;
     margin-top: -1rem;

@@ -10,6 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div class="entry-meta">
+	<?php the_title('<h2 class="entry-title">', '</h2>');?>
+	
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
