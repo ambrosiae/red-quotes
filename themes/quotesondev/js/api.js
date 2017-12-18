@@ -14,9 +14,9 @@
       
       history.pushState(null, null, slug);
       
-      var postWithSource = "<section class='site-main' <p>" + data[0].excerpt.rendered + "</p>" + "<div class='entry-meta'> <h2 class='author'> &mdash; &nbsp;" + data[0].title.rendered + "</h2>, &nbsp; " + "<a href=" + data[0]._qod_quote_source_url + ">" + data[0]._qod_quote_source + "</a>" + "</div> </section>";
+      var postWithSource = "<section class='site-main'>" + data[0].excerpt.rendered + "<div class='entry-meta'> <h2 class='author'> &mdash; &nbsp;" + data[0].title.rendered + "</h2>, &nbsp; " + "<a href=" + data[0]._qod_quote_source_url + ">" + data[0]._qod_quote_source + "</a>" + "</div> </section>";
       
-      var postNoSource = "<section class='site-main' <p>" + data[0].excerpt.rendered + "</p>" + "<div class='entry-meta'> <h2 class='author'> &mdash; &nbsp;" + data[0].title.rendered + "</h2> </div> </section>";
+      var postNoSource = "<section class='site-main'>" + data[0].excerpt.rendered + "<div class='entry-meta'> <h2 class='author'> &mdash; &nbsp;" + data[0].title.rendered + "</h2> </div> </section>";
       
       if (data[0]._qod_quote_source) {
         $('.post').append(postWithSource);

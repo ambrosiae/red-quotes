@@ -40,6 +40,9 @@
 .header-logo{
 	margin: 2rem 0rem;
 	width: 320px;
+	@include tablet{
+		width: 500px;
+	}
 	@include desktop{
 		margin: 4rem auto;
 		width: 700px;
@@ -87,18 +90,12 @@
 		}
 	}
 	
-	.site-main{
+	.site-main, .post{
 		@include desktop{
 			display: flex;
 			flex-flow: column wrap;
 			align-items: center;
 			min-height: 50vh;
-		}
-
-		.post, .hentry{
-			display: flex;
-			justify-content: center;
-			align-items: center;
 		}
 
 		p{
@@ -137,6 +134,7 @@
 			padding: 0rem 0px 0px 10px;
 		}
 		.source{
+			@include inline-row;
 			font-style: italic;
 			font-size: 1.3rem;
 		}

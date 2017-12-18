@@ -32,6 +32,9 @@
 
 /* About Page */
 .page-template-page-about{
+  @include desktop{
+    @include desktop-center;
+  }
 
   background: #222;
   padding: 1rem;
@@ -39,8 +42,8 @@
     display: flex;
     flex-flow: column wrap;
     @include desktop{
-      margin: 0rem 20rem 0rem 20rem;
-    }
+      
+        }
     p{
       font-weight: 300;
       font-size: 1.2rem;
@@ -60,11 +63,7 @@
   background: #222;
   
   @include desktop{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 60vw;
+    @include desktop-center;
   }
   
   
@@ -125,8 +124,16 @@
 
 /* Submit Page */
 .page-template-page-submit{
+  @include desktop{
+    @include desktop-center;
+  }
   padding: 1rem;
   background: #222;
+
+  .submit-div{
+    @include inline-row;
+  }
+
   .entry-title{
     font-size: 1.5rem;
   }
