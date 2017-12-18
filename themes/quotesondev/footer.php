@@ -24,6 +24,5 @@
 
 		<?php wp_footer(); ?>
 </section>
-<?php get_template_part (margins); ?>
 	</body>
 </html>

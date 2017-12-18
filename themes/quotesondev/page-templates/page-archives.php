@@ -13,7 +13,7 @@ get_header(); ?>
 		
 			<?php while (have_posts()) : the_post(); ?>
 
-	<section class="archives-container">
+	<div class="archives-container">
 		<h2>Quote Authors</h2>
 
 		<ul class="archives-ul"> <?php $posts = get_posts('posts_per_page=200');
@@ -23,21 +23,21 @@ get_header(); ?>
 
 			<?php endforeach; ?>	
 		</ul>
-	</section>
+</div>
 
-	<section class="archives-container">
+	<div class="archives-container">
 		<ul class="categories-ul">
 				<?php wp_list_categories(); ?>
 		
 		</ul>
-	</section>
+</div>
 
-	<section class="archives-container">
+	<div class="archives-container">
 		<h2>Tags</h2>
 		<ul class="tags-ul">
 				<?php wp_tag_cloud();?>
 		</ul>
-	</section>
+</div>
 
 			<?php endwhile; // End of the loop. ?>
 

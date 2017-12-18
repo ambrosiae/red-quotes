@@ -595,7 +595,7 @@ a {
           -ms-flex-pack: center;
               justify-content: center; } }
 
-.home, .page-template {
+.home {
   background: #222;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -609,12 +609,12 @@ a {
           justify-content: flex-start;
   padding: 1rem;
   position: relative; }
-  .home a:hover, .page-template a:hover {
+  .home a:hover {
     color: #007800; }
-  .home .fa-quote-left, .page-template .fa-quote-left {
+  .home .fa-quote-left {
     display: none; }
     @media all and (min-width: 1080px) {
-      .home .fa-quote-left, .page-template .fa-quote-left {
+      .home .fa-quote-left {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -623,25 +623,25 @@ a {
                 justify-content: flex-start;
         position: absolute;
         margin: auto;
-        top: 20rem;
+        top: 18rem;
         left: 8vw;
         color: #0c0;
         font-size: 8rem; } }
-  .home .fa-quote-right, .page-template .fa-quote-right {
+  .home .fa-quote-right {
     display: none; }
     @media all and (min-width: 1080px) {
-      .home .fa-quote-right, .page-template .fa-quote-right {
+      .home .fa-quote-right {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         position: absolute;
         margin: auto;
-        top: 20rem;
+        top: 18rem;
         right: 8vw;
         color: #0c0;
         font-size: 8rem; } }
   @media all and (min-width: 1080px) {
-    .home .site-main, .page-template .site-main {
+    .home .site-main {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -653,7 +653,7 @@ a {
           -ms-flex-align: center;
               align-items: center;
       min-height: 50vh; } }
-  .home .site-main .post, .home .site-main .hentry, .page-template .site-main .post, .page-template .site-main .hentry {
+  .home .site-main .post, .home .site-main .hentry {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -663,7 +663,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .home .site-main p, .page-template .site-main p {
+  .home .site-main p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -672,19 +672,19 @@ a {
     text-decoration: none;
     font-style: normal; }
     @media all and (min-width: 620px) {
-      .home .site-main p, .page-template .site-main p {
+      .home .site-main p {
         font-size: 1.8rem; } }
     @media all and (min-width: 1080px) {
-      .home .site-main p, .page-template .site-main p {
+      .home .site-main p {
         font-size: 2.3rem;
         width: 60vw;
         padding: 2rem; } }
-  .home .site-main a, .home .site-main a:visited, .page-template .site-main a, .page-template .site-main a:visited {
+  .home .site-main a, .home .site-main a:visited {
     font-size: 1.2rem;
     color: #0c0;
     text-decoration: none;
     font-style: normal; }
-  .home .site-main button, .page-template .site-main button {
+  .home .site-main button {
     background: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -694,7 +694,7 @@ a {
     text-shadow: none;
     font-size: 1rem;
     padding: 0.8rem 2rem; }
-  .home .entry-meta, .page-template .entry-meta {
+  .home .entry-meta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -705,14 +705,14 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .home .entry-meta .author, .page-template .entry-meta .author {
+    .home .entry-meta .author {
       font-weight: 300;
       font-size: 1.2rem;
       padding: 0rem 0px 0px 10px; }
-    .home .entry-meta .source, .page-template .entry-meta .source {
+    .home .entry-meta .source {
       font-style: italic;
       font-size: 1.3rem; }
-    .home .entry-meta a, .page-template .entry-meta a {
+    .home .entry-meta a {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -730,7 +730,7 @@ a {
   display: none; }
 
 .site-info {
-  margin: 3rem 0rem;
+  margin: 6rem 0rem;
   word-spacing: 0.5rem;
   font-size: 1rem; }
   @media all and (min-width: 1080px) {
@@ -798,17 +798,60 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.page-template .fa-quote-left {
+  display: none; }
+  @media all and (min-width: 1080px) {
+    .page-template .fa-quote-left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      position: absolute;
+      margin: auto;
+      top: 18rem;
+      left: 8vw;
+      color: #0c0;
+      font-size: 8rem; } }
+
+.page-template .fa-quote-right {
+  display: none; }
+  @media all and (min-width: 1080px) {
+    .page-template .fa-quote-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      margin: auto;
+      top: 18rem;
+      right: 8vw;
+      color: #0c0;
+      font-size: 8rem; } }
+
 /* About Page */
 .page-template-page-about {
   background: #222;
   padding: 1rem; }
+  .page-template-page-about .post-107 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap; }
+    @media all and (min-width: 1080px) {
+      .page-template-page-about .post-107 {
+        margin: 0rem 20rem 0rem 20rem; } }
+    .page-template-page-about .post-107 p {
+      font-weight: 300;
+      font-size: 1.2rem; }
+    .page-template-page-about .post-107 a {
+      color: #0c0; }
   .page-template-page-about h1 {
     font-size: 2rem;
     color: white; }
-  .page-template-page-about .entry-content p {
-    font-weight: 300; }
-  .page-template-page-about .entry-content a {
-    color: #0c0; }
 
 /* Archives Page */
 .page-template-page-archives {
@@ -816,6 +859,22 @@ object {
   background: #222;
   font-size: 2rem;
   color: white; }
+  @media all and (min-width: 1080px) {
+    .page-template-page-archives {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 60vw; } }
   .page-template-page-archives .archives-container {
     margin: 0rem 0.6rem; }
   .page-template-page-archives .archives-ul {

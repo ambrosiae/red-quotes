@@ -1,21 +1,56 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.page-template{
+  .fa-quote-left{
+    display: none;
+    @include desktop{
+      display: flex;
+      justify-content: flex-start;
+      position: absolute;
+      margin: auto;
+      top: 18rem;
+      left: 8vw;
+      color: #0c0;
+      font-size: 8rem;
+    }
+  }
+  
+  .fa-quote-right{
+    display: none;
+    @include desktop{
+      display: flex;
+      position: absolute;
+      margin: auto;
+      top: 18rem;
+      right: 8vw;
+      color: #0c0;
+      font-size: 8rem;
+    }
+  }
+}
 
 /* About Page */
 .page-template-page-about{
+
   background: #222;
   padding: 1rem;
-  h1{
-    @include entry-title;
-  }
-  .entry-content{
+  .post-107{
+    display: flex;
+    flex-flow: column wrap;
+    @include desktop{
+      margin: 0rem 20rem 0rem 20rem;
+    }
     p{
       font-weight: 300;
+      font-size: 1.2rem;
     }
     a{
       color: #0c0;
     }
+  }
+  h1{
+    @include entry-title;
   }
 }
 
@@ -23,6 +58,16 @@
 .page-template-page-archives{
   padding: 1rem;
   background: #222;
+  
+  @include desktop{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+  }
+  
+  
   @include entry-title;
   .archives-container{
     margin: 0rem 0.6rem;
