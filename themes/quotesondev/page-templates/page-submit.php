@@ -1,4 +1,10 @@
 <?php
+/**
+ * Template Name: Submit
+ *
+ * @package QOD_Starter_Theme
+ */
+
 
 get_header(); ?>
 
@@ -23,12 +29,12 @@ get_header(); ?>
 
               <div>
               <label for="quote-content">Quote</label>
-              <textarea rows="3" cols="20" name="quote_content"></textarea>
+              <textarea rows="3" cols="20" name="quote_content" id="quote-content"></textarea>
               </div>
 
               <div>
               <label for="quote-source">Where did you find this quote?</label>
-              <input type="text" name="quote_source" id="quote_source">
+              <input type="text" name="quote_source" id="quote-source">
               </div>
 
               <div>
@@ -36,7 +42,7 @@ get_header(); ?>
               <input type="text" name="quote_source_url" id="quote-source-url">
               </div>
 
-              <input type="submit" value="Submit Quote">
+              <input type="submit" id="submit-quote" value="Submit Quote">
               </div>          
            </form>
           <p class="submit-success-message" style="display: none;"></p>
@@ -44,10 +50,13 @@ get_header(); ?>
         </div>
 
         <?php else: ?>
-          <p>None shall post!</p>
+          <p>Sorry, you must be logged in to submit a post.</p>
           <p><?php echo sprintf('<a href="%1s">%2s</a>', esc_url(wp_login_url()), 'Click here to login.');?></p>
+          
         <?php endif; ?>
 
     </section>
   </main>
 </div>
+
+<?php get_footer(); ?>

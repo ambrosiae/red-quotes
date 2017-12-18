@@ -247,6 +247,9 @@ p, a {
   color: white;
   text-decoration: none; }
 
+a:hover {
+  color: #007800; }
+
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -315,15 +318,17 @@ ul, ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
-  list-style: disc; }
+  list-style: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0; }
 
 ol {
-  list-style: decimal; }
+  list-style: none; }
 
 li > ul,
 li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
+  margin-bottom: 0; }
 
 dt {
   font-weight: bold; }
@@ -593,11 +598,28 @@ a {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 1rem; }
-  .home .entry-content p, .home .entry-content a, .home .entry-content a:visited {
-    font-size: 1.3rem;
+  .home a:hover {
+    color: #007800; }
+  .home .site-main p {
+    font-size: 1.2rem;
     color: white;
     text-decoration: none;
     font-style: normal; }
+  .home .site-main a, .home .site-main a:visited {
+    font-size: 1.2rem;
+    color: #0c0;
+    text-decoration: none;
+    font-style: normal; }
+  .home .site-main button {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: #0c0 solid 3px;
+    color: #0c0;
+    font-family: 'Exo', sans-serif;
+    text-shadow: none;
+    font-size: 1rem;
+    padding: 0.8rem 2rem; }
   .home .entry-meta {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -611,27 +633,46 @@ a {
             align-items: center; }
     .home .entry-meta .author {
       font-weight: 300;
-      font-size: 1.3rem;
-      padding: 0rem 10px; }
+      font-size: 1.2rem;
+      padding: 0rem 0px 0px 10px; }
     .home .entry-meta .source {
       font-style: italic;
       font-size: 1.3rem; }
-  .home button, .home .new-quote-button {
-    background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: #0c0 solid 3px;
-    color: #0c0;
-    font-family: 'Exo', sans-serif;
-    text-shadow: none;
-    font-size: 1rem;
-    padding: 0.8rem 2rem; }
+    .home .entry-meta a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 1.2rem; }
+
+.posts-navigation {
+  display: none; }
 
 .site-info {
   line-height: 2rem;
   padding: 3rem 0rem;
   word-spacing: 0.5rem;
   font-size: 1rem; }
+  .site-info .menu, .site-info .primary-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .site-info .menu li, .site-info .primary-menu li {
+      padding-right: 15px; }
   .site-info .copyright {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -670,29 +711,100 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* About Page */
-.page-id-8 {
+.page-template-page-about {
   background: #222;
   padding: 1rem; }
-  .page-id-8 h1 {
+  .page-template-page-about h1 {
     font-size: 2rem;
     color: white; }
-  .page-id-8 .entry-content p {
+  .page-template-page-about .entry-content p {
     font-weight: 300; }
-  .page-id-8 .entry-content a {
+  .page-template-page-about .entry-content a {
     color: #0c0; }
 
 /* Archives Page */
-.page-id-14 {
+.page-template-page-archives {
   padding: 1rem;
   background: #222;
   font-size: 2rem;
   color: white; }
+  .page-template-page-archives .archives-container {
+    margin: 0rem 0.6rem; }
+  .page-template-page-archives .archives-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    list-style-type: none;
+    line-height: 1.5rem;
+    font-size: 1rem; }
+    .page-template-page-archives .archives-ul a {
+      margin: 0rem 1rem 0rem 0rem;
+      padding: 0; }
+  .page-template-page-archives .categories-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    list-style-type: none;
+    line-height: 1.5rem;
+    font-size: 1rem; }
+    .page-template-page-archives .categories-ul .categories {
+      font-size: 1.3rem;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      line-height: 3.5rem; }
+      .page-template-page-archives .categories-ul .categories ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        list-style-type: none;
+        line-height: 1.5rem;
+        font-size: 1rem; }
+        .page-template-page-archives .categories-ul .categories ul li {
+          margin: 0rem 1rem 0rem 0rem;
+          padding: 0; }
+  .page-template-page-archives .tags-ul, .page-template-page-archives .tag-cloud-link {
+    list-style-type: none;
+    line-height: 1.5rem; }
+    .page-template-page-archives .tags-ul h2, .page-template-page-archives .tag-cloud-link h2 {
+      line-height: 0.5rem; }
+    .page-template-page-archives .tags-ul a, .page-template-page-archives .tag-cloud-link a {
+      font-size: 20px; }
 
-/* Submit a Quote Page */
-.page-id-4 {
+/* Submit Page */
+.page-template-page-submit {
   padding: 1rem;
-  background: #222;
-  font-size: 2rem;
-  color: white; }
-  .page-id-4 h1 {
-    font-size: 2rem; }
+  background: #222; }
+  .page-template-page-submit .entry-title {
+    font-size: 1.5rem; }
+  .page-template-page-submit label {
+    font-size: 0.8rem; }
+  .page-template-page-submit textarea, .page-template-page-submit input {
+    background: transparent;
+    border: #0c0 solid 1px; }
+  .page-template-page-submit button {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: #0c0 solid 3px;
+    color: #0c0;
+    font-family: 'Exo', sans-serif;
+    text-shadow: none;
+    font-size: 1rem;
+    padding: 0.8rem 2rem; }
+
+/* Single Page */
+.single {
+  padding: 1rem;
+  background: #222; }

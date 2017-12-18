@@ -22,7 +22,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<img class="header-logo" src="<?php echo get_template_directory_uri() . '/inc/cmb2/images/qod-logo.svg'; ?>" alt="quotes-logo">
-			<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"></a>
 		</div>
 
 				<!-- <nav id="site-navigation" class="main-navigation" role="navigation"> -->

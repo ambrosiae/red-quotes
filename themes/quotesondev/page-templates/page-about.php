@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * Template Name: About
  *
  * @package QOD_Starter_Theme
  */
@@ -30,24 +30,6 @@ get_header(); ?>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-
-			<div class="entry-meta">
-	<?php the_title('<h2 class="author">&mdash; ', '</h2>'); ?>
-	<?php if($source && $source_url): ?>
-
-	<span class="source">, <a href="<?php echo $source_url; ?>">
-	<?php echo $source; ?></a></span>
-
-	<?php elseif( $source ): ?>
-
-	<span class="source">, <?php echo $source; ?></span>
-
-<?php else: ?>
-<span class="source">, No source</span>
-<?php endif; ?>
-
-</div>
 
 		<?php endif; ?>
 

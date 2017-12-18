@@ -12,7 +12,9 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 
-				<a href="">About</a> | <a href="">Archives</a> | <a href="">Submit a Quote</a>
+			
+			<div class="primary-menu">	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu') ); ?> </div>
+
 					<div class="copyright">
 					<p>Brought to you by</p> <a href="www.redacademy.com">RED Academy</a>
 					</div>

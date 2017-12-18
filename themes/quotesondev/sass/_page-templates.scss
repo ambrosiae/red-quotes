@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 /* About Page */
-.page-id-8{
+.page-template-page-about{
   background: #222;
   padding: 1rem;
   h1{
@@ -20,19 +20,91 @@
 }
 
 /* Archives Page */
-.page-id-14{
+.page-template-page-archives{
   padding: 1rem;
   background: #222;
   @include entry-title;
+  .archives-container{
+    margin: 0rem 0.6rem;
+  }
+  .archives-ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    a{
+      margin: 0rem 1rem 0rem 0rem;
+      padding: 0;
+    }
+  }
+  
+  .categories-ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    .categories{
+      font-size: 1.3rem;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      line-height: 3.5rem;
+      ul{
+        display: flex;
+        flex-flow: row wrap;
+        list-style-type: none;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        li{
+          margin: 0rem 1rem 0rem 0rem;
+          padding: 0;
+        }
+      }
+    }
+  }
+  
+  .tags-ul, .tag-cloud-link{
+    list-style-type: none;
+    line-height: 1.5rem;
+    h2{
+      line-height: 0.5rem;
+    }
+    a{
+      font-size: 20px;
+    }
+  }
+  
   
 }
 
-/* Submit a Quote Page */
-.page-id-4{
+/* Submit Page */
+.page-template-page-submit{
   padding: 1rem;
   background: #222;
-  @include entry-title;
-  h1{
-    font-size: 2rem;
+  .entry-title{
+    font-size: 1.5rem;
   }
+  label{
+    font-size: 0.8rem;
+  }
+  textarea, input{
+    background: transparent;
+    border: #0c0 solid 1px;
+  }
+  button{
+    background: transparent;
+    box-shadow: none;
+    border: #0c0 solid 3px;
+    color: #0c0;
+    font-family: 'Exo', sans-serif;
+    text-shadow: none;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;  }
+}
+
+/* Single Page */
+.single{
+  padding: 1rem;
+  background: #222;
 }
