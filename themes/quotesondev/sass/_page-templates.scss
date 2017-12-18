@@ -32,6 +32,9 @@
       font-size: 8rem;
     }
   }
+  h1{
+    @include entry-title;
+  }
 }
 
 /* About Page */
@@ -41,7 +44,7 @@
     flex-flow: column wrap;
     @include desktop{
       
-        }
+    }
     p{
       font-weight: 300;
       font-size: 1.2rem;
@@ -50,14 +53,17 @@
       color: #0c0;
     }
   }
-  h1{
-    @include entry-title;
-  }
 }
 
 /* Archives Page */
 .page-template-page-archives{
-  @include entry-title;
+  h1{
+    @include entry-title;
+    padding-left: 0.5rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
   .archives-container{
     margin: 0rem 0.6rem;
   }
@@ -112,10 +118,10 @@
 
 /* Submit Page */
 .page-template-page-submit{
- .submit-div{
+  .submit-div{
     @include inline-row;
   }
-
+  
   .entry-title{
     font-size: 1.5rem;
   }
@@ -125,6 +131,9 @@
   textarea, input{
     background: transparent;
     border: #0c0 solid 1px;
+  }
+  .submit-button{
+    @include button-green;
   }
 }
 
