@@ -634,47 +634,54 @@ a {
         right: 8vw;
         color: #0c0;
         font-size: 8rem; } }
-  .home .site-main, .page-template .site-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+  @media all and (min-width: 1080px) {
+    .home .site-main, .page-template .site-main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 50vh; } }
+  .home .site-main p, .page-template .site-main p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .home .site-main p, .page-template .site-main p {
-      font-size: 1.2rem;
-      color: white;
-      text-decoration: none;
-      font-style: normal; }
-      @media all and (min-width: 1080px) {
-        .home .site-main p, .page-template .site-main p {
-          margin-top: 3rem;
-          font-size: 2.3rem;
-          height: 40vh;
-          width: 60vw;
-          padding: 2rem; } }
-    .home .site-main a, .home .site-main a:visited, .page-template .site-main a, .page-template .site-main a:visited {
-      font-size: 1.2rem;
-      color: #0c0;
-      text-decoration: none;
-      font-style: normal; }
-    .home .site-main button, .page-template .site-main button {
-      background: transparent;
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      border: #0c0 solid 3px;
-      color: #0c0;
-      font-family: 'Exo', sans-serif;
-      text-shadow: none;
-      font-size: 1rem;
-      padding: 0.8rem 2rem; }
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    font-style: normal; }
+    @media all and (min-width: 620px) {
+      .home .site-main p, .page-template .site-main p {
+        font-size: 1.8rem; } }
+    @media all and (min-width: 1080px) {
+      .home .site-main p, .page-template .site-main p {
+        margin-top: 3rem;
+        font-size: 2.3rem;
+        width: 60vw;
+        padding: 2rem; } }
+  .home .site-main a, .home .site-main a:visited, .page-template .site-main a, .page-template .site-main a:visited {
+    font-size: 1.2rem;
+    color: #0c0;
+    text-decoration: none;
+    font-style: normal; }
+  .home .site-main button, .page-template .site-main button {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: #0c0 solid 3px;
+    color: #0c0;
+    font-family: 'Exo', sans-serif;
+    text-shadow: none;
+    font-size: 1rem;
+    padding: 0.8rem 2rem; }
   .home .entry-meta, .page-template .entry-meta {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -868,3 +875,37 @@ object {
 .single {
   padding: 1rem;
   background: #222; }
+
+/* Error 404 Page */
+.error404 {
+  padding: 1rem;
+  background: #222; }
+  .error404 .page-title {
+    font-size: 3rem;
+    margin-top: -1rem; }
+  .error404 .page-content {
+    font-size: 1.5rem; }
+  .error404 fieldset {
+    border: none; }
+  .error404 .search-field {
+    background: transparent;
+    border: #0c0 solid 1px;
+    font-family: 'Exo' 'sans-serif'; }
+  .error404 button {
+    margin-left: -30px;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none; }
+  .error404 .search-submit {
+    position: relative;
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none; }
+    .error404 .search-submit spanc {
+      color: transparent; }
+  .error404 .fa-search {
+    color: #0c0;
+    margin-left: -50px; }

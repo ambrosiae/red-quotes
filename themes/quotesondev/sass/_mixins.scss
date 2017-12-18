@@ -27,6 +27,12 @@
 	padding: 0.8rem 2rem;
 }
 
+@mixin tablet {
+	@media all and (min-width: 620px) {
+		@content;
+	}
+}
+
 @mixin desktop {
 	@media all and (min-width: 1080px) {
 		@content;

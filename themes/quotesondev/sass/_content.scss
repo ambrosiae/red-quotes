@@ -58,20 +58,20 @@
 		color: rgb(0, 120, 0);
 	}
 	
-		.fa-quote-left{
-			display: none;
-			@include desktop{
-				display: flex;
-				justify-content: flex-start;
-				position: absolute;
-				margin: auto;
-				bottom: 38rem;
-				left: 8vw;
-				color: #0c0;
-				font-size: 8rem;
-			}
+	.fa-quote-left{
+		display: none;
+		@include desktop{
+			display: flex;
+			justify-content: flex-start;
+			position: absolute;
+			margin: auto;
+			bottom: 38rem;
+			left: 8vw;
+			color: #0c0;
+			font-size: 8rem;
+		}
 	}
-
+	
 	.fa-quote-right{
 		display: none;
 		@include desktop{
@@ -83,22 +83,28 @@
 			color: #0c0;
 			font-size: 8rem;
 		}
-}
-
+	}
+	
 	.site-main{
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;
-		align-items: center;
+		@include desktop{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			align-items: center;
+			height: 50vh;
+		}
 		p{
+			justify-content: center;
 			font-size: 1.2rem;
 			color: white;			
 			text-decoration: none;
 			font-style: normal;
+			@include tablet{
+				font-size: 1.8rem;
+			}
 			@include desktop{
 				margin-top: 3rem;
 				font-size: 2.3rem;
-				height: 40vh;
 				width: 60vw;
 				padding: 2rem;
 			}

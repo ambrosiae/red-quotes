@@ -99,3 +99,45 @@
   padding: 1rem;
   background: #222;
 }
+
+/* Error 404 Page */
+.error404{
+  padding: 1rem;
+  background: #222;
+  
+  .page-title{
+    font-size: 3rem;
+    margin-top: -1rem;
+  }
+  .page-content{
+    font-size: 1.5rem;
+  }
+  fieldset{
+    border: none;
+  }
+  .search-field{
+    background: transparent;
+    border: #0c0 solid 1px;
+    font-family: 'Exo' 'sans-serif';
+  }
+  button{
+    margin-left: -30px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+  }
+  .search-submit{
+    position: relative;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    spanc{
+      color: transparent;
+    }
+  }
+  .fa-search{
+    color: #0c0;
+    margin-left: -50px;
+  }
+}
