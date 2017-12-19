@@ -92,7 +92,19 @@ button:hover{
 			font-size: 8rem;
 		}
 	}
-	
+}
+
+.home{
+	@include desktop{
+		.site-footer{
+			margin-right: 5rem;
+		}
+	}
+}
+
+/* Home and Single Post Content Pages */
+
+.home, .single-post{
 	.site-main, .post{
 		@include desktop{
 			display: flex;
@@ -106,7 +118,7 @@ button:hover{
 			color: white;			
 			text-decoration: none;
 			font-style: normal;
-
+			
 			@include tablet{
 				font-size: 1.8rem;
 			}
@@ -148,6 +160,9 @@ button:hover{
 			font-size :1.2rem;
 		}
 	}
+	.nav-links{
+		display: none;
+	}
 }
 
 .posts-navigation{
@@ -168,6 +183,7 @@ button:hover{
 		}
 		@include desktop{
 			justify-content: flex-end;
+			margin-right: -10rem;
 		}
 	}
 	
