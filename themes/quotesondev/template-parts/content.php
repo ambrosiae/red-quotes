@@ -21,7 +21,8 @@ $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url');
 <?php the_content(); ?>
 
 </div>
-
+<div class="entry-meta">
+<?php the_title('<h2 class="author">&mdash; ', '</h2>'); ?>
 	<?php if ($source && $source_url):?>
 	<span class="source">, &nbsp;<a href="<?php echo $source_url; ?>"><?php echo $source; ?></a></span>
 
@@ -33,10 +34,9 @@ $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url');
 <?php endif; ?>
 
 </div>
-	
-
 </article><!-- #post-## -->
 
 <?php if(is_home() || is_single()): ?>
-	<button type="button" id="new-quote-button">Show me another!</button>
+	<button type="button" class="new-quote-button" id="new-quote-button">Show me another!</button>
 <?php endif; ?>
+</div>

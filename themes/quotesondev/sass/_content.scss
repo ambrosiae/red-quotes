@@ -51,6 +51,13 @@
 	}
 }
 
+button, .new-quote-button{
+	@include button-green;
+}
+button:hover{
+	@include button-green;
+}
+
 .home{
 	background: #222;
 	display: flex;
@@ -58,10 +65,6 @@
 	justify-content: flex-start;
 	padding: 1rem;
 	position: relative;
-	
-	a:hover{
-		color: rgb(0, 120, 0);
-	}
 	
 	.fa-quote-left{
 		display: none;
@@ -95,7 +98,7 @@
 			display: flex;
 			flex-flow: column wrap;
 			align-items: center;
-			min-height: 50vh;
+			min-height: 30vh;
 		}
 
 		p{
@@ -120,11 +123,8 @@
 			text-decoration: none;
 			font-style: normal;
 		}
-		button{
-			@include button-green;
-		}
-	}
 	
+	}
 	.entry-meta{
 		@include inline-row;
 		
@@ -148,7 +148,6 @@
 	}
 }
 
-
 .posts-navigation{
 	display: none;
 }
@@ -162,6 +161,10 @@
 		flex-flow: row wrap;
 		justify-content: flex-end;
 		margin-right: 8rem;
+		p{
+			border-left: #fff solid 1px;
+			padding-left: 15px;
+		}
 	}
 	
 	.menu, .primary-menu{

@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.page-template{
+.page-template, .post-template-default, .search, .archive{
   @include desktop{
     @include desktop-center;
   }
@@ -57,6 +57,9 @@
 
 /* Archives Page */
 .page-template-page-archives{
+  a:hover{
+    color: $dark-green;
+  }
   h1{
     @include entry-title;
     padding-left: 0.5rem;
@@ -119,7 +122,10 @@
 /* Submit Page */
 .page-template-page-submit{
   .submit-div{
-    @include inline-row;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding-bottom: 2rem;
   }
   
   .entry-title{
@@ -132,13 +138,27 @@
     background: transparent;
     border: #0c0 solid 1px;
   }
-  .submit-button{
-    @include button-green;
-  }
 }
 
 /* Single Page */
 .single{
+}
+
+/* Search Page */
+.search-results{
+  .page-title{
+    border-bottom: #fff solid 0.5px;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Category Single Page */
+.category{
+  .entry-meta{
+    @include inline-row;
+    border-bottom: #fff solid 0.5px;
+    padding-bottom: 1rem;
+  }
 }
 
 /* Error 404 Page */
