@@ -130,7 +130,6 @@
     align-items: flex-start;
     padding-bottom: 2rem;
   }
-  
   .entry-title{
     font-size: 1.5rem;
   }
@@ -140,12 +139,22 @@
   textarea, input{
     background: transparent;
     border: #0c0 solid 1px;
+    min-width: 20rem;
+  }
+  
+  button, .submit-button{
+    @include button-green;
+  }
+  button:hover{
+    @include button-green;
+    box-shadow: none;
+    text-shadow: none;
   }
 }
 
 /* Submit Page - Logged Out */
 .page-id-218{
-    padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 /* Search Page */
@@ -153,6 +162,16 @@
   .page-title{
     border-bottom: #fff solid 0.5px;
     padding-bottom: 0.5rem;
+  }
+}
+
+/* Single Page */
+.single-post{
+  @include desktop{
+    font-size: 1.5rem;
+  }
+  .nav-links{
+    display: none;
   }
 }
 
