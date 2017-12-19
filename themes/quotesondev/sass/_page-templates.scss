@@ -165,42 +165,8 @@
   }
 }
 
-// /* Single Page */
-// .single-post{
-//   @include desktop{
-//     font-size: 1.5rem;
-//   }
-//   .nav-links{
-//     display: none;
-//   }
-
-// 	.entry-meta{
-// 		@include inline-row;
-// 		@include desktop{
-// 			padding-left: 2rem;
-// 		}
-// 		.author{
-// 			font-weight: 300;
-// 			font-size: 1.2rem;
-// 			padding: 0rem 0px 0px 10px;
-// 		}
-// 		.source{
-// 			@include inline-row;
-// 			font-style: italic;
-// 			font-size: 1.3rem;
-// 		}
-// 		a{
-// 			display: flex;
-// 			flex-wrap: nowrap;
-// 			justify-content: center;
-// 			align-items: center;
-// 			font-size :1.2rem;
-// 		}
-// 	}
-// }
-
 /* Category Single Page */
-.category{
+.category, .tag{
   p{
     font-size: 2rem;
   }
@@ -211,7 +177,7 @@
   }
   .entry-meta, .page-title{
     @include inline-row;
-    border-bottom: #fff solid 0.5px;
+    border-bottom: #fff dotted 0.5px;
     padding-bottom: 1rem;
   }
 }

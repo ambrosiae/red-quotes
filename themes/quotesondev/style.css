@@ -665,7 +665,7 @@ button:hover {
         font-size: 8rem; } }
 
 @media all and (min-width: 1080px) {
-  .home .site-footer {
+  .home .site-info {
     margin-right: 5rem; } }
 
 /* Home and Single Post Content Pages */
@@ -1033,15 +1033,15 @@ object {
   padding-bottom: 0.5rem; }
 
 /* Category Single Page */
-.category p {
+.category p, .tag p {
   font-size: 2rem; }
 
-.category .source {
+.category .source, .tag .source {
   font-style: italic;
   font-size: 1.3rem;
   color: #0c0; }
 
-.category .entry-meta, .category .page-title {
+.category .entry-meta, .category .page-title, .tag .entry-meta, .tag .page-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,7 +1052,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: #fff solid 0.5px;
+  border-bottom: #fff dotted 0.5px;
   padding-bottom: 1rem; }
 
 /* Error 404 Page */
