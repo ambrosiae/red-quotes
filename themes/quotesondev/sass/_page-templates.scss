@@ -177,7 +177,15 @@
 
 /* Category Single Page */
 .category{
-  .entry-meta{
+  p{
+    font-size: 2rem;
+  }
+  .source{
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #0c0;
+  }
+  .entry-meta, .page-title{
     @include inline-row;
     border-bottom: #fff solid 0.5px;
     padding-bottom: 1rem;
