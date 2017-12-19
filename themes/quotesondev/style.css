@@ -421,7 +421,7 @@ a {
   a:visited {
     color: #0c0; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #007800; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -746,7 +746,23 @@ button:hover {
   margin: 6rem 0rem;
   word-spacing: 0.5rem;
   font-size: 1rem; }
-  @media all and (min-width: 1080px) {
+  @media all and (min-width: 620px) {
+    .site-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin-right: 8rem; }
+      .site-info p {
+        border-left: #fff solid 1px;
+        padding-left: 15px; } }
+  @media all and (min-width: 620px) and (min-width: 1080px) {
     .site-info {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -758,10 +774,7 @@ button:hover {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      margin-right: 8rem; }
-      .site-info p {
-        border-left: #fff solid 1px;
-        padding-left: 15px; } }
+      margin: 7rem -10rem auto auto; } }
   .site-info .menu li, .site-info .primary-menu li {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -814,11 +827,11 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.page-template, .post-template-default, .search, .archive {
+.page-template, .post-template-default, .search, .archive, .error404 {
   background: #222;
   padding: 1rem; }
   @media all and (min-width: 1080px) {
-    .page-template, .post-template-default, .search, .archive {
+    .page-template, .post-template-default, .search, .archive, .error404 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -834,10 +847,10 @@ object {
               align-items: center;
       width: 60vw;
       margin: auto; } }
-  .page-template .fa-quote-left, .post-template-default .fa-quote-left, .search .fa-quote-left, .archive .fa-quote-left {
+  .page-template .fa-quote-left, .post-template-default .fa-quote-left, .search .fa-quote-left, .archive .fa-quote-left, .error404 .fa-quote-left {
     display: none; }
     @media all and (min-width: 1080px) {
-      .page-template .fa-quote-left, .post-template-default .fa-quote-left, .search .fa-quote-left, .archive .fa-quote-left {
+      .page-template .fa-quote-left, .post-template-default .fa-quote-left, .search .fa-quote-left, .archive .fa-quote-left, .error404 .fa-quote-left {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -850,10 +863,10 @@ object {
         left: 8vw;
         color: #0c0;
         font-size: 8rem; } }
-  .page-template .fa-quote-right, .post-template-default .fa-quote-right, .search .fa-quote-right, .archive .fa-quote-right {
+  .page-template .fa-quote-right, .post-template-default .fa-quote-right, .search .fa-quote-right, .archive .fa-quote-right, .error404 .fa-quote-right {
     display: none; }
     @media all and (min-width: 1080px) {
-      .page-template .fa-quote-right, .post-template-default .fa-quote-right, .search .fa-quote-right, .archive .fa-quote-right {
+      .page-template .fa-quote-right, .post-template-default .fa-quote-right, .search .fa-quote-right, .archive .fa-quote-right, .error404 .fa-quote-right {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -863,7 +876,7 @@ object {
         right: 8vw;
         color: #0c0;
         font-size: 8rem; } }
-  .page-template h1, .post-template-default h1, .search h1, .archive h1 {
+  .page-template h1, .post-template-default h1, .search h1, .archive h1, .error404 h1 {
     font-size: 2rem;
     color: white; }
 
@@ -881,6 +894,9 @@ object {
     font-size: 1.2rem; }
   .page-template-page-about .post-107 a {
     color: #0c0; }
+
+.page-template-page-about .entry-meta {
+  display: none; }
 
 /* Archives Page */
 .page-template-page-archives a:hover {
@@ -975,7 +991,10 @@ object {
   background: transparent;
   border: #0c0 solid 1px; }
 
-/* Single Page */
+/* Submit Page - Logged Out */
+.page-id-218 {
+  padding-left: 2rem; }
+
 /* Search Page */
 .search-results .page-title {
   border-bottom: #fff solid 0.5px;
@@ -1005,11 +1024,22 @@ object {
   font-size: 1.5rem; }
 
 .error404 fieldset {
-  border: none; }
+  border: none;
+  margin: -10px; }
+
+.error404 .search-submit {
+  width: 10px; }
 
 .error404 .search-field {
   background: transparent;
-  border: #0c0 solid 1px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: #0c0 solid 3px;
+  color: #0c0;
+  font-family: 'Exo', sans-serif;
+  text-shadow: none;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
   font-family: 'Exo' 'sans-serif'; }
 
 .error404 button {

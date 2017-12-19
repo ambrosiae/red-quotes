@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.page-template, .post-template-default, .search, .archive{
+.page-template, .post-template-default, .search, .archive, .error404{
   @include desktop{
     @include desktop-center;
   }
@@ -52,6 +52,9 @@
     a{
       color: #0c0;
     }
+  }
+  .entry-meta{
+    display: none;
   }
 }
 
@@ -140,8 +143,9 @@
   }
 }
 
-/* Single Page */
-.single{
+/* Submit Page - Logged Out */
+.page-id-218{
+    padding-left: 2rem;
 }
 
 /* Search Page */
@@ -172,10 +176,14 @@
   }
   fieldset{
     border: none;
+    margin: -10px;
   }
+  .search-submit{
+    width: 10px;
+  }
+  
   .search-field{
-    background: transparent;
-    border: #0c0 solid 1px;
+    @include button-green;
     font-family: 'Exo' 'sans-serif';
   }
   button{

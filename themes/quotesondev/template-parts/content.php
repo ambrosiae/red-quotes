@@ -20,7 +20,6 @@ $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url');
 
 <?php the_content(); ?>
 
-</div>
 <div class="entry-meta">
 <?php the_title('<h2 class="author">&mdash; ', '</h2>'); ?>
 	<?php if ($source && $source_url):?>
